@@ -1,0 +1,471 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+/* Стили шапки сайта */
+.header {
+	background-color: $default;
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 80px;
+   }
+}
+.logo {
+	margin: 0 auto;
+}
+
+.menu {
+	&__list{
+		display: flex;
+	}
+	&__list-item{
+		padding-right: 80px;
+	}
+	&__list-link{
+		@extend %title-font;
+		color: rgba(255, 255, 255, 0.9);
+		line-height: 22px;
+	}
+	&__list-link--active{
+		padding-bottom: 4px;
+		position: relative;
+		&::after{
+			content: '';
+         position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 2px;
+			border-radius: 1px;
+			background-color: rgba($title, .7);
+		}
+	}
+} 
+
+
+/* Стили Footer */
+.footer {
+	&__content{
+		background: #181a1f;
+		padding: 60px 0 80px;
+		
+	}
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info{
+		width: 540px;
+	}
+	&__info-title{
+		color: #fff;
+		font-size: 16px;
+		font-weight: normal;
+		margin-bottom: 14px;
+		line-height: 23px;
+	}
+	&__info-text{
+		color: #fff;
+		font-size: 14px;
+      margin-bottom: 16px;
+		max-width: 475px;
+	}
+
+	&__info-email{
+		color: #fff;
+	}
+
+	&__form{
+		display: flex;
+		margin-top: 10px;
+
+	}
+	&__form-input{ /* Стили формы */
+		padding: 6px 10px 6px 18px;
+		background-color: transparent;
+		border: 1px solid rgba($title, .7);
+		width: 100%;
+		&::placeholder{
+			font-family: 'Open Sans', sans-serif;
+	      font-weight: 400;
+			font-size: 16px;
+			line-height: 27px;
+			color: a1a1a1;
+		}
+	}
+	&__form-button{ /* Стили кнопки отправка формы */
+       background-color: $title;
+		 border: none;
+		 font-weight: 600;
+		 padding: 6px 12px;
+		 min-width: 160px;
+		 margin-left: 9px;
+		 cursor: pointer;
+	}
+	&__social{
+      width: 125px;
+		margin-right: auto;
+		margin-left: 100px;
+	}
+	&__social-link{
+      padding-left: 28px;
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 3px;
+			left: 0;
+			width: 16px;
+			height: 16px;
+		}
+	}
+	&__social-link--facebook::before{
+		background-image: url(../images/facebook.svg);
+	}
+	&__social-link--instagram::before{
+		background-image: url(../images/instagram.svg);
+		width: 14px;
+		height: 14px;
+		top: 4px;
+	}
+	&__social-link--pinterest::before{
+		background-image: url(../images/pinterest.svg);
+	}
+	&__social-link--whatsapp::before{
+		background-image: url(../images/whatsapp.svg);
+		width: 14px;
+		height: 14px;
+	}
+	&__social-link--youtube::before{
+		background-image: url(../images/youtube.svg);
+		width: 18px;
+		height: 12px;
+		top: 4px;
+	}
+	&__social-item,
+	&__menu-item{
+		margin-bottom: 15px;
+		font-weight: 600;
+		font-size: 14px;
+		color: #707070;
+	}
+	&__social-link,
+	&__menu-link{
+      color: #707070;
+	}
+	&__menu{
+     margin-right: 60px;
+	  width: 125px;
+	}
+	&__copyright{
+		background-color: $default;
+		color: #111113;
+		text-align: center;
+		padding: 42px 0 41px;
+	}
+}
+
+/* Стили 1 секции top */
+.top {
+	height: 100vh;
+	padding: 170px 0 155px;
+	background-image: url(../images/top-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	&__title{
+		@extend %title-font;
+		color: $title;
+		font-size: 80px;
+		line-height: 80px;
+	}
+	&__subtitle{
+		@extend %title-font;
+		color: $title;
+		font-size: 40px;
+		line-height: 80px;
+		padding-bottom: 22px;
+		margin-top: 22px;
+		margin-bottom: 22px;
+		position: relative;
+		&::after{
+			content:'';
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			width: 200px;
+			height: 1px;
+			bottom: 0;
+			background-color: #fd3c3d;
+		}
+	}
+	&__text{
+		color: #ffff;
+	}
+}
+
+/* Стили 2 скции our-services */
+.our-services {
+	text-align: center;
+	padding: 45px 0 35px;
+	&__title{
+		@extend %title-font;
+		color: $title;
+		font-size: 35px;
+		line-height: 51px;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+		position: relative;
+		&::after{
+			content:'';
+			position: absolute;
+			width: 250px;
+			height: 1px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			background-color: #fd3c3d;
+		}
+	}
+	&__text{
+		color: #ffff;
+		max-width: 730px;
+		margin: 0 auto 50px;
+	}
+}
+
+.services { /* Стили для грида с изобаражениями */
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 30px;
+	padding-bottom: 70px;
+	&__item{
+		position: relative;
+		&:hover{ /* Принаведении на блок активна ссылка и затемнение */
+			.services__info{
+            opacity: 1;
+				transition: all .5s; /* Задержка при наведении */
+			}
+		}
+	}
+	&__images{
+		min-height: 350px;
+		object-fit: cover; /* Точное вписание изображения в квадрат */
+	}
+	&__info{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(#fff, .7);
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		opacity: 0; /* Затемнение бока */
+	}
+	&__info-title{
+		@extend %title-font;
+		font-size: 20px;
+		line-height: 25px;
+		color: $title;
+		padding-bottom: 19px;
+		margin-bottom: 19px;
+		position: relative;
+		&::after{
+			content:'';
+			bottom: 0;
+			position: absolute;
+			height: 1px;
+			background-color: #6D7278;
+			width: 80%;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+		}
+	}
+	&__info-item {
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+	&__info-text{
+		font-weight: 600;
+		font-size: 14px;
+		color: #707070;
+	}
+}
+
+/* Стили 3 секции concept */
+.concept {
+	padding: 170px 0 155px;
+	background-image: url(../images/concept-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	&__title{
+		@extend %title-font;
+      max-width: 730px;
+		color: $title;
+		font-size: 60px;
+		line-height: 80px;
+		padding-bottom: 22px;
+		margin-bottom: 22px;
+		position: relative;
+		&::after{
+			content:'';
+			position: absolute;
+			left: 0;
+			width: 200px;
+			height: 1px;
+			bottom: 0;
+			background-color: #6D7278;
+		}
+	}
+	&__text{
+		color: #fff;
+		width: 540px;
+	}
+}
+
+/* Стили блока галерея */
+.gallery {
+	padding: 80px 0 90px;
+	&__buttons{
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	&__btn{
+		margin: 0 13px;
+		background-color: transparent;
+		border: 1px solid #454647;
+		border-radius: 20px;
+		padding: 6px 16px;
+		color: #8F8D8D;
+		font-size: 14px;
+		font-weight: 600;
+		cursor: pointer;
+	}
+	&__items{
+		display: grid;
+      grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 30px 35px;
+	}
+	&__item:first-child{
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+	&__item img{
+		object-fit: cover;
+		width: 100%;
+		max-height: 1150px;
+		height: 100%;
+	}
+	&.gallery-page{ /* Стили страницы галерея */
+		.gallery__item img {
+			max-height: 1165px;
+		}
+		.gallery__item:nth-child(8){
+			grid-column: span 2;
+		   grid-row: span 2;
+		}
+	}
+}
+
+/* Стили для блога */
+.blog-box {
+	padding-bottom: 100px;
+	&__title{
+		color: $title;
+		@extend %title-font;
+		font-size: 36px;
+		line-height: 51px;
+		margin-bottom: 30px;
+		text-align: center;
+		margin: 0 auto 30px;
+		max-width: 430px;
+	}
+	&__items{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 30px;
+	}
+	&__img-link{
+		margin-bottom: 19px;
+		display: inline-block;
+	}
+	&__link{
+		margin-bottom: 9px;
+		font-size: 14px;
+		font-weight: 600;
+		color: #707070;
+	}
+	&__date,
+	&__autor,
+	&__theme{
+		color: #fff;
+	}
+	&__item-title{
+		color: $title;
+		font-size: 20px;
+		line-height: 38px;
+	}
+}
+
+/* Стили 2 скции our-trainers */
+.our-trainers {
+	text-align: center;
+	padding: 45px 0 35px;
+	&__title{
+		@extend %title-font;
+		color: $title;
+		font-size: 35px;
+		line-height: 51px;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+		position: relative;
+		&::after{
+			content:'';
+			position: absolute;
+			width: 250px;
+			height: 1px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			background-color: #fd3c3d;
+		}
+	}
+	&__text{
+		color: #ffff;
+		max-width: 730px;
+		margin: 0 auto 50px;
+	}
+}
+
+.trainers {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	padding-bottom: 70px;
+	&__item{
+		display: flex;
+		flex-direction: column;
+	}
+	&__info-item {
+		margin-top: 15px;
+		color: #fff;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	&__info-text{
+		font-size: 14px;
+		color: #ffffff;
+	}
+}

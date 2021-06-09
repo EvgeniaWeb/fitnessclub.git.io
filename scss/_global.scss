@@ -1,0 +1,57 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 27px;
+   color: &default;
+	overflow-x: hidden;
+	min-width: 320px;
+	background-color: $default;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.sliding-button {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	position: relative;
+	margin-top: 50px;
+	padding: 15px 30px;
+	border: 1px solid;
+	border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+	border-image-slice: 1;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: 2px;
+	transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
