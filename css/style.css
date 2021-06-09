@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.menu__list-link, .top__title, .top__subtitle, .our-services__title, .services__info-title, .concept__title, .blog-box__title, .our-trainers__title {
+.menu__list-link, .top__title, .top__subtitle, .our-services__title, .services__info-title, .concept__title, .blog-box__title, .our-trainers__title, .about__prev-title, .about__title {
   font-family: 'Russo One', sans-serif;
   font-weight: 400;
 }
@@ -181,7 +181,7 @@ body {
   right: 0;
   height: 2px;
   border-radius: 1px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #fd3c3d;
 }
 
 /* Стили Footer */
@@ -349,6 +349,35 @@ body {
   color: #111113;
   text-align: center;
   padding: 42px 0 41px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  padding: 13px 14px;
+  position: relative;
+  z-index: 999;
+}
+
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumbs__item::after {
+  content: '/';
+  color: #fff;
+  margin-left: -4px;
+  margin-right: 4px;
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  color: #fff;
 }
 
 /* Стили 1 секции top */
@@ -540,7 +569,7 @@ body {
   width: 200px;
   height: 1px;
   bottom: 0;
-  background-color: #6D7278;
+  background-color: #fd3c3d;
 }
 
 .concept__text {
@@ -713,5 +742,71 @@ body {
 .trainers__info-text {
   font-size: 14px;
   color: #ffffff;
+}
+
+/* Стили страницы о нас */
+.about__prev {
+  background-image: url(../images/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+  padding: 160px 0;
+  margin-top: -53px;
+}
+
+.about__prev-title {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.about__content {
+  padding: 130px 0 40px;
+}
+
+.about__title {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 60px;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.about__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 1px;
+  background-color: #fd3c3d;
+}
+
+.about__text {
+  color: #fff;
+  padding-left: 284px;
+}
+
+.about__text p {
+  margin-bottom: 30px;
+}
+
+.about__popup {
+  background-image: url(../images/popup-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 414px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
