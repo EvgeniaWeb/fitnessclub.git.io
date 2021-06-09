@@ -549,3 +549,85 @@
 		display: flex;
 	}
 }
+
+/* Стили страницы контакты */
+.contact {
+	padding-bottom: 100px;
+	&__title{
+		@extend %title-font;
+		color: $title;
+		font-size: 36px;
+		line-height: 60px;
+		padding-bottom: 30px;
+		margin-bottom: 40px;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			width: 200px;
+			height: 1px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: #fd3c3d;
+		}
+	}	
+	.contact__social{
+		padding-left: 284px;
+		display: flex;
+		margin-bottom: 20px;
+	}
+	&__social-item + .contact__social-item{
+		padding-left: 40px;
+	}
+	&__text{
+		color: #fff;
+		margin-bottom: 10px;
+	}
+	&__msk{
+		color: #fff;
+		margin-bottom: 16px;
+	}
+	&__box{
+		padding-left: 284px;
+	}
+	&__form{
+		padding-left: 284px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__form-input{
+		background-color: transparent;
+		border: 1px solid rgba(255, 255, 255, 0.7);
+		padding: 6px 17px;
+		margin-bottom: 13px;
+		width: 48%;
+		&::placeholder{
+			color: #A1A1A1;
+			font-size: 16px;
+
+		}
+	}
+	&__form-area{
+		width: 100%;
+		background-color: transparent;
+		border: 1px solid rgba(255, 255, 255, 0.7);
+		padding: 14px 17px;
+		margin-bottom: 13px;
+		min-height: 125px;
+		resize: none;
+		&::placeholder{
+			color: #A1A1A1;
+			font-size: 16px;
+	}
+}
+	&__form-btn{
+		background-color: #ffffff;
+      border: none;
+      font-weight: 600;
+      padding: 6px 12px;
+      min-width: 160px;
+      cursor: pointer;
+   }
+}
