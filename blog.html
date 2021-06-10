@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Фитнес клуб</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Шапка сайта -->
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="/about.html">О нас</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="/gallery.html">Галерея</a>
+							</li>
+						</ul>
+					</nav>
+					<a class="logo" href="#">
+						<img src="images/logo.png" alt="">
+					</a>
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a class="menu__list-link menu__list-link--active" href="/blog.html">Блог</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="/contact.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="/index.html">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="/blog.html">Блог</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="blog">
+				<div class="container">
+					<div class="blog__inner">
+						<div class="blog__items">
+							<div class="blog__item">
+								<img class="blog__item-img" src="images/blog/3.jpg" alt="images">
+								<div class="blog__item-info">
+									<span class="blog__item-date">Марта, 2021 г. |</span>
+									<a class="blog__item-autor">Марина Инина</a>
+									<a class="blog__item-theme">Тренировки</a>
+								</div>
+								<h3 class="blog__item-title">
+									Жиросжигающая тренировка
+								</h3>
+								<p class="blog__item-text">
+									Иногда может быть сложно выделить время для занятий в зале. Бывает и так, что у человека
+									просто нет желания покидать пределы квартиры холодным осенним вечером.
+									Хорошо, что можно худеть дома на жиросжигающих тренировках. Все, что потребуется – гладкая
+									поверхность под ногами, таймер, небольшие гантели, коврик и понимание того, как тренироваться
+									по системе табата.
+								</p>
+							</div>
+							<blockquote class="blog__blockquote">
+								"Без дисциплины ты ничто! Когда-нибудь ты встретишь крутого парня, который выдержит самые твои
+								лучшие удары. И будет продолжать наступать, потому что он сильный. Не лишайся силы духа и мужества. Это время,
+								когда дисциплина вступает в игру."
+								<div class="blog__blockquote-autor">
+									Майк Тайсон
+								</div>
+							</blockquote>
+
+							<div class="blog__item article-popup">
+								<div class="article-popup__box">
+									<img class="blog__item-img" src="images/popup-bg.jpg" alt="images">
+									<a class="blog__item-popup" href="https://www.youtube.com/watch?v=30uOTTFOldE">
+										<img class="blog__item-play" src="images/play_button.svg" alt="play button">
+									</a>
+								</div>
+								<div class="blog__item-info">
+									<span class="blog__item-date">Марта, 2021 г. |</span>
+									<a class="blog__item-autor">Марина Инина</a>
+									<a class="blog__item-theme">Питание</a>
+								</div>
+								<h3 class="blog__item-title">
+									Сколько нужно калорий в день, чтобы похудеть?
+								</h3>
+							</div>
+                    
+							<div class="blog__item article-slider">
+								<div class="article-slider__box">
+									<img class="article-slider__img" src="images/blog/4.jpg" alt="images">
+									<img class="article-slider__img" src="images/blog/4.jpg" alt="images">
+									<img class="article-slider__img" src="images/blog/4.jpg" alt="images">
+								</div>
+								<div class="blog__item-info">
+									<span class="blog__item-date">Марта, 2021 г. |</span>
+									<a class="blog__item-autor">Марина Инина</a>
+									<a class="blog__item-theme">Питание</a>
+								</div>
+								<h3 class="blog__item-title">
+									Сколько нужно калорий в день, чтобы похудеть?
+								</h3>
+								<p class="blog__item-text">
+									Нет единой нормы, сколько нужно калорий в день, чтобы похудеть.
+									Она рассчитывается индивидуально для каждого человека с учетом его физических особенностей и
+									образа жизни.
+								</p>
+
+							</div>
+
+							<div class="pagination">
+								<a class="pagination__arrow pagination__arrow--disabled" href="#">
+									<img class="pagination__arrow-icon" src="images/arrow-left.svg" alt="arrow icon">
+								</a>
+								<ul class="pagination__list">
+									<li class="pagination__list-item">
+										<a class="pagination__list-num pagination__list-num--active" href="#">1</a>
+									</li>
+									<li class="pagination__list-item">
+										<a class="pagination__list-num" href="#">2</a>
+									</li>
+								</ul>
+								<a class="pagination__arrow" href="#">
+									<img class="pagination__arrow-icon " src="images/arrow-right.svg" alt="arrow icon">
+								</a>
+							</div>
+						</div>
+
+						<aside class="aside">
+							<form class="aside__search">
+								<input class="aside__search-input" type="text" placeholder="Поиск">
+								<button class="aside__search-btn" type="submit">
+									<img src="images/search-icon.svg" alt="search icon">
+								</button>
+							</form>
+							<div class="blog__category">
+								<h6 class="blog__category-title">
+									Категории
+								</h6>
+								<ul class="blog__category-list">
+									<li class="blog__category-item">
+										<a class="blog__category-link" href="#">
+											Новости(3)
+										</a>
+									</li>
+									<li class="blog__category-item">
+										<a class="blog__category-link" href="#">
+											Питание(4)
+										</a>
+									</li>
+									<li class="blog__category-item">
+										<a class="blog__category-link" href="#">
+											Тренировки (8)
+										</a>
+									</li>
+									<li class="blog__category-item">
+										<a class="blog__category-link" href="#">
+											Психология(1)
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="resent-posts">
+								<h6 class="resent-posts__title">
+									Последние посты
+								</h6>
+								<ul class="resent-posts__list">
+									<li class="resent-posts__item">
+										<a class="resent-posts__item-title" href="#">
+											Итоги соревнований по пауэрлифтингу
+										</a>
+										<span class="resent-posts__date">12 Марта, 2021 г. |</span>
+										<a class="resent-posts__autor" href="#">Марина Инина</a>
+									</li>
+									<li class="resent-posts__item">
+										<a class="resent-posts__item-title" href="#">
+											Турнир по жиму 28+3
+										</a>
+										<span class="resent-posts__date">20 Апреля, 2021 г. |</span>
+										<a class="resent-posts__autor" href="#">Марина Инина</a>
+									</li>
+									<li class="resent-posts__item">
+										<a class="resent-posts__item-title" href="#">
+											Дарим лето спорта
+										</a>
+										<span class="resent-posts__date">20 Мая, 2021 г. |</span>
+										<a class="resent-posts__autor" href="#">Марина Инина</a>
+									</li>
+								</ul>
+							</div>
+							<div class="blog__tags">
+								<h6 class="blog__tags-title">
+									Теги
+								</h6>
+								<a class="blog__tags-link" href="#">Спорт</a>
+								<a class="blog__tags-link" href="#">Фитнес</a>
+								<a class="blog__tags-link" href="#">Тренировки</a>
+								<a class="blog__tags-link" href="#">Тренажеры</a>
+								<a class="blog__tags-link" href="#">Питание</a>
+							</div>
+							<ul class="blog__social">
+								<li class="blog__social-item">
+									<a class="blog__social-link" href="#">
+										<img class="blog__social-link" src="images/facebook.svg" alt="facebook">
+									</a>
+								</li>
+								<li class="blog__social-item">
+									<a class="blog__social-link" href="#">
+										<img class="blog__social-link" src="images/instagram.svg" alt="instagram">
+									</a>
+								</li>
+								<li class=blog__social-item">
+									<a class="blog__social-link" href="#">
+										<img class="blog__social-link" src="images/whatsapp.svg" alt="whatsapp">
+									</a>
+								</li>
+								<li class="blog__social-item">
+									<a class="blog__social-link" href="#">
+										<img class="blog__social-link" src="images/youtube.svg" alt="youtube">
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div>
+				</div>
+			</section>
+		</main>
+
+
+
+		<!-- Подвал сайта -->
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="container">
+					<div class="footer__inner">
+						<div class="footer__info">
+							<h6 class="footer__info-title">
+								Подпишитесь на рассылку
+							</h6>
+							<p class="footer__info-text">
+								Наша цель - сделать твое путешествие по миру фитнеса комфортным и безопасным.
+							</p>
+							<a class="info-email" href="mailto:ouremailaddress@email.com">
+								ouremailaddress@email.com
+							</a>
+							<form class="footer__form">
+								<!-- Форма заявки -->
+								<input class="footer__form-input" type="email" placeholder="Subscribe by email">
+								<button class="footer__form-button" type="submit">Отправить</button>
+							</form>
+						</div>
+						<ul class="footer__social">
+							<li class="footer__social-item">
+								<a class="footer__social-link footer__social-link--facebook" href="#">Facebook</a>
+								<!-- footer__social-link--facebook модификатор-->
+							</li>
+							<li class="footer__social-item">
+								<a class="footer__social-link footer__social-link--instagram" href="#">Instagram</a>
+							</li>
+							<li class="footer__social-item">
+								<a class="footer__social-link footer__social-link--whatsapp" href="#">WhatsApp</a>
+							</li>
+							<li class="footer__social-item">
+								<a class="footer__social-link footer__social-link--youtube" href="#">Youtube</a>
+							</li>
+						</ul>
+						<nav class="footer__menu">
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item">
+									<a class="footer__menu-link" href="#">О нас</a>
+								</li>
+								<li class="footer__menu-item">
+									<a class="footer__menu-link" href="#">Галерея</a>
+								</li>
+								<li class="footer__menu-item">
+									<a class="footer__menu-link" href="#">Блог</a>
+								</li>
+								<li class="footer__menu-item">
+									<a class="footer__menu-link" href="#">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<div class="container">
+					<p>© 2021 IRONMASS CROSSFIT STUDIO</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<script src="libs/jQuery/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+</body>
+
+</html>
