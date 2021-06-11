@@ -178,6 +178,7 @@
 	padding: 13px 14px;
 	position: relative;
 	z-index: 10;
+	background-color: #f75051bf;
 	&__list{
 		display: flex;
 		overflow-x: auto;
@@ -641,6 +642,14 @@
       min-width: 160px;
       cursor: pointer;
    }
+
+	.map{
+		margin-top: -53px;
+		margin-bottom: 50px;
+		iframe{
+			height: 578px;
+		}
+	}
 }
 
 /* Стили страницы блога */
