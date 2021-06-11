@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 </head>
 
 <body>
@@ -28,7 +31,7 @@
 							</li>
 						</ul>
 					</nav>
-					<a class="logo" href="#">
+					<a class="logo" href="/index.html">
 						<img src="images/logo.png" alt="">
 					</a>
 					<nav class="menu">
@@ -41,249 +44,258 @@
 							</li>
 						</ul>
 					</nav>
+					<button class="header__btn-menu">
+						<!-- Кнопка при адаптиве бургер меню -->
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
 			</div>
 		</header>
-
-		<!-- Первая секция -->
-		<section class="top">
-			<div class="container">
-				<h1 class="top__title">
-					IRONMASS
-				</h1>
-				<h2 class="top__subtitle">
-					CROSSFIT STUDIO
-				</h2>
-				<p class="top__text">
-					прокачай себя с опытными тренерами первая тренировка бесплатно
-				</p>
-				<a href="#" class="sliding-button">Прокачаться</a>
-			</div>
-		</section>
-
-		<!-- Вторая секция -->
-		<section class="our-services">
-			<div class="container-fluid">
-				<h3 class="our-services__title">
-					наши направления
-				</h3>
-				<p class="our-services__text">
-					все, что нужно для эффективных тренировок
-				</p>
-				<div class="services">
-					<a class="services__item" href="#">
-						<img class="services__images " src="images/content/servic-1.jpg" alt="">
-						<div class="services__info">
-							<h6 class="services__info-item">
-								basic crossfit
-							</h6>
-							<p class="services__info-text">
-								Lorem, ipsum dolor | IRONMASS
-							</p>
-						</div>
-					</a>
-
-					<a class="services__item" href="#">
-						<img class="services__images " src="images/content/servic-2.jpg" alt="">
-						<div class="services__info">
-							<h6 class="services__info-item">
-								fotness studio
-							</h6>
-							<p class="services__info-text">
-								Lorem, ipsum dolor | IRONMASS
-							</p>
-						</div>
-					</a>
-
-					<a class="services__item" href="#">
-						<img class="services__images " src="images/content/servic-3.jpg" alt="">
-						<div class="services__info">
-							<h6 class="services__info-item">
-								yoga classes
-							</h6>
-							<p class="services__info-text">
-								Lorem, ipsum dolor | IRONMASS
-							</p>
-						</div>
-					</a>
-
-					<a class="services__item" href="#">
-						<img class="services__images " src="images/content/servic-4.jpg" alt="">
-						<div class="services__info">
-							<h6 class="services__info-item">
-								personal training
-							</h6>
-							<p class="services__info-text">
-								Lorem, ipsum dolor | IRONMASS
-							</p>
-						</div>
-					</a>
-					<a class="services__item" href="#">
-						<img class="services__images " src="images/content/servic-5.jpg" alt="">
-						<div class="services__info">
-							<h6 class="services__info-item">
-								massage room
-							</h6>
-							<p class="services__info-text">
-								Lorem, ipsum dolor | IRONMASS
-							</p>
-						</div>
-					</a>
+		<main class="main">
+			<!-- Первая секция -->
+			<section class="top">
+				<div class="container">
+					<h1 class="top__title">
+						IRONMASS
+					</h1>
+					<h2 class="top__subtitle">
+						CROSSFIT STUDIO
+					</h2>
+					<p class="top__text">
+						прокачай себя с опытными тренерами первая тренировка бесплатно
+					</p>
+					<a href="#" class="sliding-button">Прокачаться</a>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- Третья секция -->
-		<section class="concept">
-			<div class="container">
-				<h2 class="concept__title">
-					КОНЦЕПЦИЯ CROSSFIT STUDIO
-				</h2>
-				<p class="concept__text">
-					В этот зал мы вложили душу: он сконструирован со знанием дела и искренней любовью к спорту. В зале
-					установлено все необходимое кроссфит-оборудование.
-					Мы выбрали и установили лучшие тренажеры для занятий клиентов любого уровня подготовки.
-				</p>
-			</div>
-		</section>
+			<!-- Вторая секция -->
+			<section class="our-services">
+				<div class="container-fluid">
+					<h3 class="our-services__title">
+						наши направления
+					</h3>
+					<p class="our-services__text">
+						все, что нужно для эффективных тренировок
+					</p>
+					<div class="services">
+						<a class="services__item" href="#">
+							<img class="services__images " src="images/content/servic-1.jpg" alt="">
+							<div class="services__info">
+								<h6 class="services__info-item">
+									basic crossfit
+								</h6>
+								<p class="services__info-text">
+									Lorem, ipsum dolor | IRONMASS
+								</p>
+							</div>
+						</a>
 
-		<!-- Галерея -->
-		<section class="gallery">
-			<div class="container-fluid">
-				<div class="gallery__buttons">
-					<button class="gallery__btn">Тренажерный зал</button>
-					<button class="gallery__btn">Кардиозона</button>
-					<button class="gallery__btn">Силовые тренажеры</button>
-					<button class="gallery__btn">Аэробная зона</button>
-					<button class="gallery__btn">Массажный кабинет</button>
-				</div>
-				<div class="gallery__inner">
-					<div class="gallery__items">
-						<a class="gallery__item" href="#">
-							<img src="images/gallery/4.jpg" alt="images">
+						<a class="services__item" href="#">
+							<img class="services__images " src="images/content/servic-2.jpg" alt="">
+							<div class="services__info">
+								<h6 class="services__info-item">
+									fotness studio
+								</h6>
+								<p class="services__info-text">
+									Lorem, ipsum dolor | IRONMASS
+								</p>
+							</div>
 						</a>
-						<a class="gallery__item" href="#">
-							<img src="images/gallery/2.jpg" alt="images">
+
+						<a class="services__item" href="#">
+							<img class="services__images " src="images/content/servic-3.jpg" alt="">
+							<div class="services__info">
+								<h6 class="services__info-item">
+									yoga classes
+								</h6>
+								<p class="services__info-text">
+									Lorem, ipsum dolor | IRONMASS
+								</p>
+							</div>
 						</a>
-						<a class="gallery__item" href="#">
-							<img src="images/gallery//3.jpg" alt="images">
+
+						<a class="services__item" href="#">
+							<img class="services__images " src="images/content/servic-4.jpg" alt="">
+							<div class="services__info">
+								<h6 class="services__info-item">
+									personal training
+								</h6>
+								<p class="services__info-text">
+									Lorem, ipsum dolor | IRONMASS
+								</p>
+							</div>
 						</a>
-						<a class="gallery__item" href="#">
-							<img src="images/gallery/1.jpg" alt="images">
-						</a>
-						<a class="gallery__item" href="#">
-							<img src="images/gallery/5.jpg" alt="images">
+						<a class="services__item" href="#">
+							<img class="services__images " src="images/content/servic-5.jpg" alt="">
+							<div class="services__info">
+								<h6 class="services__info-item">
+									massage room
+								</h6>
+								<p class="services__info-text">
+									Lorem, ipsum dolor | IRONMASS
+								</p>
+							</div>
 						</a>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- Тренеры -->
-		<section class="our-trainers">
-			<div class="container-fluid">
-				<h3 class="our-trainers__title">
-					НАША КОМАНДА ПРОФЕССИОНАЛОВ
-				</h3>
-				<p class="our-trainers__text">
-					с нами ты будешь в отличной форме
-				</p>
-
-				<div class="trainers">
-					<div class="trainers__item">
-						<img class="trainers__images " src="images/trainers/1.jpg" alt="">
-						<div class="trainers__info">
-							<h6 class="trainers__info-item">
-								Игорь Глумов
-							</h6>
-							<p class="trainers__info-text">
-								Главный тренер и основатель клуба.
-								Тренер команды IRONMASS. Заслуженный мастер спорта России по пауэрлифтингу.
-							</p>
-						</div>
-					</div>
-
-					<div class="trainers__item">
-						<img class="trainers__images " src="images/trainers/3.jpg" alt="">
-						<div class="trainers__info">
-							<h6 class="trainers__info-item">
-								Евгений Глушко
-							</h6>
-							<p class="trainers__info-text">
-								Тренер.Стаж в кроссфите с 2012 года.Crossfit level one, Crossfit strongman.
-								Ведет занятия по кроссфит, силовая подготовка, strongman.
-							</p>
-						</div>
-					</div>
-
-					<div class="trainers__item">
-						<img class="trainers__images " src="images/trainers/2.jpg" alt="">
-						<div class="trainers__info">
-							<h6 class="trainers__info-item">
-								Марина Воробьева
-							</h6>
-							<p class="trainers__info-text">
-								Тренер, атлет.Стаж в кроссфите с 2012 года. Crossfit Level 1.
-								Победитель Фит-Лиги 2014 (Москва, октябрь 2014)
-							</p>
-						</div>
-					</div>
-
-					<div class="trainers__item">
-						<img class="trainers__images " src="images/trainers/4.jpg" alt="">
-						<div class="trainers__info">
-							<h6 class="trainers__info-item">
-								Дмитрий Егоров
-							</h6>
-							<p class="trainers__info-text">
-								Тренер. Участник Central Europe Throwdown 2014, French Throwdown 2014,
-								Istanbul Throwdown 2014, Fanatic Adriatic Throwdown 2014.
-							</p>
-						</div>
-					</div>
-
-
-
-
+			<!-- Третья секция -->
+			<section class="concept">
+				<div class="container">
+					<h2 class="concept__title">
+						КОНЦЕПЦИЯ CROSSFIT STUDIO
+					</h2>
+					<p class="concept__text">
+						В этот зал мы вложили душу: он сконструирован со знанием дела и искренней любовью к спорту. В зале
+						установлено все необходимое кроссфит-оборудование.
+						Мы выбрали и установили лучшие тренажеры для занятий клиентов любого уровня подготовки.
+					</p>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- Секция блог -->
-		<section class="blog-box">
-			<div class="container">
-				<h3 class="blog-box__title">
-					Новости
-				</h3>
-				<div class="blog-box__items">
-					<div class="blog-box__item">
-						<a class="blog-box__img-link" href="#">
-							<img class="blog-box__img" src="images/blog/1.jpg" alt="images">
-						</a>
-						<div class="blog-box__links"></span>
-							<span class="blog-box__date">12 Марта, 2021 г. |</span>
-							<a class="blog-box__autor" href="#">Марина Инина</a>
-						</div>
-						<a class="blog-box__item-titlelink" href="#"></a>
-						<h4 class="blog-box__item-title">
-							Итоги соревнований по пауэрлифтингу</h4>
+			<!-- Галерея -->
+			<section class="gallery">
+				<div class="container-fluid">
+					<div class="gallery__buttons">
+						<button class="gallery__btn">Тренажерный зал</button>
+						<button class="gallery__btn">Кардиозона</button>
+						<button class="gallery__btn">Силовые тренажеры</button>
+						<button class="gallery__btn">Аэробная зона</button>
+						<button class="gallery__btn">Массажный кабинет</button>
 					</div>
-					<div class="blog-box__item">
-						<a class="blog-box__img-link" href="#">
-							<img class="blog-box__img" src="images/blog/2.jpg" alt="images">
-						</a>
-						<div class="blog-box__links">
-							<span class="blog-box__date">20 Мая, 2021 г. |</span>
-							<a class="blog-box__autor" href="#">Марина Инина</a>
+					<div class="gallery__inner">
+						<div class="gallery__items">
+							<a class="gallery__item" href="#">
+								<img src="images/gallery/4.jpg" alt="images">
+							</a>
+							<a class="gallery__item" href="#">
+								<img src="images/gallery/2.jpg" alt="images">
+							</a>
+							<a class="gallery__item" href="#">
+								<img src="images/gallery//3.jpg" alt="images">
+							</a>
+							<a class="gallery__item" href="#">
+								<img src="images/gallery/1.jpg" alt="images">
+							</a>
+							<a class="gallery__item" href="#">
+								<img src="images/gallery/5.jpg" alt="images">
+							</a>
 						</div>
-						<a class="blog-box__item-titlelink" href="#"></a>
-						<h4 class="blog-box__item-title">
-							Дарим лето спорта</h4>
 					</div>
-
 				</div>
-			</div>
-		</section>
+			</section>
+
+			<!-- Тренеры -->
+			<section class="our-trainers">
+				<div class="container-fluid">
+					<h3 class="our-trainers__title">
+						НАША КОМАНДА ПРОФЕССИОНАЛОВ
+					</h3>
+					<p class="our-trainers__text">
+						с нами ты будешь в отличной форме
+					</p>
+
+					<div class="trainers">
+						<div class="trainers__item">
+							<img class="trainers__images " src="images/trainers/1.jpg" alt="">
+							<div class="trainers__info">
+								<h6 class="trainers__info-item">
+									Игорь Глумов
+								</h6>
+								<p class="trainers__info-text">
+									Главный тренер и основатель клуба.
+									Тренер команды IRONMASS. Заслуженный мастер спорта России по пауэрлифтингу.
+								</p>
+							</div>
+						</div>
+
+						<div class="trainers__item">
+							<img class="trainers__images " src="images/trainers/3.jpg" alt="">
+							<div class="trainers__info">
+								<h6 class="trainers__info-item">
+									Евгений Глушко
+								</h6>
+								<p class="trainers__info-text">
+									Тренер.Стаж в кроссфите с 2012 года.Crossfit level one, Crossfit strongman.
+									Ведет занятия по кроссфит, силовая подготовка, strongman.
+								</p>
+							</div>
+						</div>
+
+						<div class="trainers__item">
+							<img class="trainers__images " src="images/trainers/2.jpg" alt="">
+							<div class="trainers__info">
+								<h6 class="trainers__info-item">
+									Марина Воробьева
+								</h6>
+								<p class="trainers__info-text">
+									Тренер, атлет.Стаж в кроссфите с 2012 года. Crossfit Level 1.
+									Победитель Фит-Лиги 2014 (Москва, октябрь 2014)
+								</p>
+							</div>
+						</div>
+
+						<div class="trainers__item">
+							<img class="trainers__images " src="images/trainers/4.jpg" alt="">
+							<div class="trainers__info">
+								<h6 class="trainers__info-item">
+									Дмитрий Егоров
+								</h6>
+								<p class="trainers__info-text">
+									Тренер. Участник Central Europe Throwdown 2014, French Throwdown 2014,
+									Istanbul Throwdown 2014, Fanatic Adriatic Throwdown 2014.
+								</p>
+							</div>
+						</div>
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<!-- Секция блог -->
+			<section class="blog-box">
+				<div class="container">
+					<h3 class="blog-box__title">
+						Новости
+					</h3>
+					<div class="blog-box__items">
+						<div class="blog-box__item">
+							<a class="blog-box__img-link" href="#">
+								<img class="blog-box__img" src="images/blog/1.jpg" alt="images">
+							</a>
+							<div class="blog-box__links"></span>
+								<span class="blog-box__date">12 Марта, 2021 г. |</span>
+								<a class="blog-box__autor" href="#">Марина Инина</a>
+							</div>
+							<a class="blog-box__item-titlelink" href="#"></a>
+							<h4 class="blog-box__item-title">
+								Итоги соревнований по пауэрлифтингу</h4>
+						</div>
+						<div class="blog-box__item">
+							<a class="blog-box__img-link" href="#">
+								<img class="blog-box__img" src="images/blog/2.jpg" alt="images">
+							</a>
+							<div class="blog-box__links">
+								<span class="blog-box__date">20 Мая, 2021 г. |</span>
+								<a class="blog-box__autor" href="#">Марина Инина</a>
+							</div>
+							<a class="blog-box__item-titlelink" href="#"></a>
+							<h4 class="blog-box__item-title">
+								Дарим лето спорта</h4>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</main>
+
+
 
 		<!-- Подвал сайта -->
 		<footer class="footer">
@@ -347,6 +359,10 @@
 			</div>
 		</footer>
 	</div>
+
+	<script src="libs/jQuery/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
 </body>
 
 </html>

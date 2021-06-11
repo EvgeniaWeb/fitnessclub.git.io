@@ -10,19 +10,24 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		height: 80px;
+		height: 120px;
    }
+	&__btn-menu{
+		display: none;
+	}
 }
 .logo {
 	margin: 0 auto;
 }
 
 .menu {
+	padding-right: 15px;
 	&__list{
 		display: flex;
 	}
 	&__list-item{
-		padding-right: 80px;
+		padding-left: 35px;
+		padding-right: 45px;
 	}
 	&__list-link{
 		@extend %title-font;
@@ -172,15 +177,19 @@
 .breadcrumbs {
 	padding: 13px 14px;
 	position: relative;
-	z-index: 999;
+	z-index: 10;
 	&__list{
 		display: flex;
+		overflow-x: auto;
+	}
+	&__item{
+		position: relative;
+		padding-right: 8px;
 	}
 	&__item::after{
 		content: '/';
 		color: #fff;
-		margin-left: -4px;
-		margin-right: 4px;
+		position: absolute;
 	}
 	&__item:last-child::after{
 		display: none;
@@ -316,6 +325,7 @@
 	}
 	&__info-item {
 		font-size: 25px;
+		color: #fd3c3d;
 		text-transform: uppercase;
 	}
 	&__info-text{
@@ -819,3 +829,5 @@
 	  display: none;
   }
 }
+
+@import 'media'
